@@ -1,0 +1,116 @@
+VERSION BUILD=12.0.501.6698
+TAB T=1
+TAB CLOSEALLOTHERS
+'SET !PLAYBACKDELAY 2.00
+'URL GOTO=https://m.facebook.com/
+'SET !VAR1 EVAL("var min = 5; var max = 20; var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min; randomNumber;")
+'WAIT SECONDS={{!VAR1}}
+'TAG POS=1 TYPE=INPUT:TEXT ATTR=NAME:email CONTENT=user
+'SET !ENCRYPTION NO
+'SET !VAR2 EVAL("var min = 10; var max = 30; var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min; randomNumber;")
+'WAIT SECONDS={{!VAR2}}
+'TAG POS=1 TYPE=INPUT:PASSWORD ATTR=NAME:pass CONTENT=pass
+'SET !VAR3 EVAL("var min = 5; var max = 15; var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min; randomNumber;")
+'WAIT SECONDS={{!VAR3}}
+'TAG POS=1 TYPE=INPUT:SUBMIT ATTR=NAME:login
+'WAIT SECONDS=5
+URL GOTO=https://www.facebook.com/search/str/quan+ao/keywords_blended_posts
+WAIT SECONDS=5
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+
+WAIT SECONDS=3
+SET !EXTRACT_TEST_POPUP NO
+SET !EXTRACT NULL
+TAG POS={{!LOOP}} TYPE=a ATTR=class:_5pcq EXTRACT=HREF
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=C:\Users\Administrator\Documents\iMacros\DataSources\urls.csv
+WAIT SECONDS=5
+
+URL GOTO=https://www.facebook.com/search/str/quan+ao/keywords_blended_posts?filters_rp_group=groups(me)
+WAIT SECONDS=5
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=3
+SET !EXTRACT_TEST_POPUP NO
+SET !EXTRACT NULL
+TAG POS={{!LOOP}} TYPE=a ATTR=class:_5pcq EXTRACT=HREF
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=C:\Users\Administrator\Documents\iMacros\DataSources\urls.csv
+WAIT SECONDS=5
+
+URL GOTO=https://www.facebook.com/search/str/quan+ao/keywords_blended_posts?filters_rp_author=stories-feed-friends
+WAIT SECONDS=5
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=1
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=3
+SET !EXTRACT_TEST_POPUP NO
+SET !EXTRACT NULL
+TAG POS={{!LOOP}} TYPE=a ATTR=class:_5pcq EXTRACT=HREF
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=C:\Users\Administrator\Documents\iMacros\DataSources\urls.csv
+WAIT SECONDS=5

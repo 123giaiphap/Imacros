@@ -1,0 +1,31 @@
+VERSION BUILD=12.0.501.6698
+TAB T=1
+TAB CLOSEALLOTHERS
+'SET !PLAYBACKDELAY 0.00
+URL GOTO=https://www.facebook.com/
+TAG POS=1 TYPE=INPUT:TEXT ATTR=NAME:q CONTENT=quan<sp>ao
+DS CMD=KEY X=0 Y=0 CONTENT={ENTER}
+DS CMD=KEY X=0 Y=0 CONTENT={ENTER}
+WAIT SECONDS=3
+TAG POS=2 TYPE=DIV ATTR=class:_4xjz
+WAIT SECONDS=2
+URL GOTO =javascript:window.scrollBy(0,20000)
+URL GOTO =javascript:window.scrollBy(0,20000)
+URL GOTO =javascript:window.scrollBy(0,20000)
+TAG POS=1 TYPE=DIV ATTR=class:_5f9e
+URL GOTO =javascript:window.scrollBy(0,20000)
+URL GOTO =javascript:window.scrollBy(0,20000)
+URL GOTO =javascript:window.scrollBy(0,20000)
+URL GOTO =javascript:window.scrollBy(0,20000)
+URL GOTO =javascript:window.scrollBy(0,20000)
+URL GOTO =javascript:window.scrollBy(0,20000)
+URL GOTO =javascript:window.scrollBy(0,20000)
+URL GOTO =javascript:window.scrollBy(0,20000)
+URL GOTO =javascript:window.scrollBy(0,20000)
+URL GOTO =javascript:window.scrollBy(0,20000)
+WAIT SECONDS=2
+SET !EXTRACT_TEST_POPUP NO
+SET !EXTRACT NULL
+TAG POS={{!LOOP}} TYPE=a ATTR=class:_5pcq EXTRACT=HREF
+SAVEAS TYPE=EXTRACT FOLDER=* FILE=C:\Users\Administrator\Documents\iMacros\DataSources\urls.csv
+WAIT SECONDS=10
